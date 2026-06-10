@@ -59,7 +59,7 @@
 - **数据库搭建**：已在 `backend/schema.sql` 准备好包含 4 张核心表（`user`、`receive_record`、`send_request`、`exception_record`）与默认账号的建表脚本，本地连接密码默认为 `123`（配置见 `application.yml`）。
 - **功能模块**：已跑通用户鉴权模块、收件录入与出库、发件申请与分配揽件、异常登记处理及首页大盘数据统计所有接口。
 - **环境兼容性**：代码已去除 Lombok 依赖并替换为原生 Getter/Setter，兼容如 JDK 26 等较新版本 Java 环境下的稳定编译，确保“开箱即用”。
-- **启动与测试**：可通过本地 IDE 直接运行 `CampusExpressApplication.java`，或进入 `backend` 目录使用附带的 Maven 工具启动：
+- **启动与测试**：可通过本地 IDE 直接运行 `CampusExpressApplication.java`，或进入 `backend` 目录使用自带的 Maven Wrapper 启动：
   ```bash
-  ./apache-maven-3.9.6/bin/mvn spring-boot:run
+  ./mvnw spring-boot:run
   ```
